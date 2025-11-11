@@ -15,5 +15,16 @@
         />
         <comment>Создание первой таблицы</comment>
     </changeSet>
-
+    <changeSet runAlways="true" author="maximenko_alex" id="script2" dbms="postgresql">
+        <sqlFile
+                dbms="postgresql"
+                path="scripts/script2.sql"
+                encoding="UTF-8"
+                endDelimiter="/"
+                relativeToChangelogFile="true"
+                splitStatements="true"
+                stripComments="true"
+        />
+        <comment>Добавление новой записи при каждому запуске сервиса</comment>
+    </changeSet>
 </databaseChangeLog>
